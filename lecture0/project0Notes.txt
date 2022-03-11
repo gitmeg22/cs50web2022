@@ -1,3 +1,210 @@
-This is a page for notes
+https://cs50.harvard.edu/web/2020/projects/0/search/
 
-Here are the notes
+To determine what the parameter names should be, you’re welcome to experiment with making Google searches, and looking at the resulting URL. 
+It may also be helpful to open the “Network” inspector (accessible in Google Chrome by choosing View -> Developer -> Developer Tools) to view details about requests your browser makes to Google.
+        
+        REGULAR GOOGLE SEARCH
+        query = "git"
+        
+        result URL:
+        https://www.google.com/search?q=git&source=hp&ei=88orYofIFcivytMPmIOC2Ak&iflsig=AHkkrS4AAAAAYivZAw6GzZMNpePYNLnhhJ7DCyuMU9LJ&ved=0ahUKEwjHjZ_Mi7_2AhXIl3IEHZiBAJsQ4dUDCAk&uact=5&oq=git&gs_lcp=Cgdnd3Mtd2l6EAMyBAgAEEMyDgguEIAEELEDEMcBENEDMgcIABCxAxBDMgcIABCxAxBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgcIABCxAxBDMgQIABBDOhAILhDHARDRAxDqAhC0AhBDOgoIABDqAhC0AhBDUPtEWM5IYJVeaAFwAHgAgAFNiAHbAZIBATOYAQCgAQGwAQo&sclient=gws-wiz
+        
+        q -- git
+        source -- hp
+        ei --
+        iflsig --
+        ved --
+        uact --
+        oq --
+        gs_lcp --
+        sclient -- gws-wiz
+        
+        
+        
+        IMAGE SEARCH
+        query = "git"
+        
+        result URL:
+        https://www.google.com/search?q=git&hl=en&tbm=isch&source=hp&biw=1095&bih=619&ei=yMsrYrj6JJuqptQPsvK84AQ&iflsig=AHkkrS4AAAAAYivZ2FubPV9SA1LIZpNfFUjw7p_7rbJn&ved=0ahUKEwi4_vaxjL_2AhUblYkEHTI5D0wQ4dUDCAc&uact=5&oq=git&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIFCAAQgAQyBQgAEIAEMggIABCABBCxAzILCAAQgAQQsQMQgwEyCAgAEIAEELEDMgUIABCABDIICAAQgAQQsQM6CAgAELEDEIMBUABYoQFg8ARoAHAAeACAAUSIAaYBkgEBM5gBAKABAaoBC2d3cy13aXotaW1n&sclient=img
+        
+        q -- git
+        hl 
+        tbm 
+        source -- hp
+        biw
+        bih
+        ei --
+        iflsig --
+        ved --
+        uact --
+        oq --
+        gs_lcp --
+        sclient -- img
+        
+	
+================================================================
+
+        ADVANCED SEARCH:
+	
+================================================================
+================================================================
+	ALL THESE WORDS: (first input field)
+================================================================
+
+        query = "git add versus commit"
+        
+        result URL:
+        https://www.google.com/search?hl=en&as_q=git+add+versus+commit&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=
+        
+        hl		= en
+        as_q    	= git+add+versus+commit
+        as_epq
+        as_oq
+        as_eq
+        as_nlo
+        as_nhi
+        lr
+        cr
+        as_qdr    	= all
+        as_sitesearch
+        as_occt 	= any
+        safe 		= images
+        as_filetype
+        tbs
+        
+	ALL OF THESE PARAMETERS ARE EMPTY EXCEPT FOR THE FOUR WITH EQUAL SIGNS
+        
+        query = "git add vs commit"
+        result URL:
+        https://www.google.com/search?hl=en&as_q=git+add+vs+commit&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=
+        
+        as_q = git+add+vs+commit
+	
+	*** ONLY PARAMETER CHANGE = AS_Q
+	*** ADVANCED SEARCH QUERY
+	
+	PER GOOGLE: To do this in the search box
+	*** Type the important words:  tricolor rat terrier
+
+	
+================================================================
+	THIS EXACT WORD OR PHRASE: (second input field)
+================================================================
+
+	query = "git add vs commit"
+	
+	result URL:
+	https://www.google.com/search?hl=en&as_q=&as_epq=git+add+vs+commit&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=
+	
+	*** ONLY PARAMETER CHANGE = AS_EPQ
+	*** ADVANCED SEARCH EXACT PHRASE QUERY
+	
+	PER GOOGLE: To do this in the search box
+	*** Put exact words in quotes:  "rat terrier"
+
+	
+================================================================
+	ANY OF THESE WORDS: (third input field)
+================================================================
+
+	query = "git add vs commit"
+
+	result URL:
+	https://www.google.com/search?hl=en&as_q=&as_epq=&as_oq=git+add+vs+commit&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=
+		
+	*** ONLY PARAMETER CHANGE = AS_OQ
+	*** git OR add OR vs OR commit
+	
+	PER GOOGLE: To do this in the search box
+	*** Type OR between all the words you want:  miniature OR standard
+
+
+================================================================
+	NONE OF THESE WORDS: (fourth input field)
+================================================================
+
+	query = "git add vs commit"
+
+	result URL:
+	https://www.google.com/search?hl=en&as_q=&as_epq=&as_oq=&as_eq=git+add+vs+commit&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=
+		
+	*** ONLY PARAMETER CHANGE = AS_EQ
+	*** -git -add -vs -commit
+
+	PER GOOGLE: To do this in the search box
+	*** Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"
+	
+
+================================================================
+	NUMBERS RANGING FROM: (fifth input field) TO (sixth input field)
+================================================================
+
+	query = 10
+	query = 20
+
+	result URL:
+	https://www.google.com/search?hl=en&as_q=&as_epq=&as_oq=&as_eq=&as_nlo=10&as_nhi=20&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=
+		
+	*** PARAMETER CHANGE = AS_NLO = 10
+	*** PARAMETER CHANGE = AS_NHO = 20
+	*** 10..20
+	
+	PER GOOGLE: To do this in the search box
+	*** Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011
+
+
+TESTING NARROWED RESULTS:
+q = git
+
+
+*** PARAMETER CHANGE = LR = LANG_AF
+https://www.google.com/search?hl=en&as_q=git&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=lang_af&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=
+
+*** PARAMETER CHANGE = CR = COUNTRYAF
+https://www.google.com/search?hl=en&as_q=git&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=countryAF&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=
+
+
+~~~~~~~~~~~~~ Find pages updated within the time you specify.
+
+*** PARAMETER CHANGE = AS_QDR = D
+https://www.google.com/search?hl=en&as_q=git&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=d&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=
+
+*** PARAMETER CHANGE = AS_QDR = W
+https://www.google.com/search?hl=en&as_q=git&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=w&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=
+
+
+~~~~~~~~~~~~~ Search one site (like  wikipedia.org ) or limit your results to a domain like .edu, .org or .gov
+
+*** PARAMETER CHANGE = AS_SITESEARCH = .EDU
+*** git site:.edu
+https://www.google.com/search?hl=en&as_q=git&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=.edu&as_occt=any&safe=images&as_filetype=&tbs=
+
+*** PARAMETER CHANGE = AS_SITESEARCH = HARVARD.EDU
+*** git site:harvard.edu
+*** error thrown when Top Level Domain is excluded
+https://www.google.com/search?hl=en&as_q=git&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=harvard.edu&as_occt=any&safe=images&as_filetype=&tbs=
+
+
+~~~~~~~~~~~~~ Search for terms in the whole page, page title, or web address, or links to the page you're looking for.
+
+*** PARAMETER CHANGE = AS_OCCT = TITLE
+*** allintitle: git
+https://www.google.com/search?hl=en&as_q=git&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=title&safe=images&as_filetype=&tbs=
+
+
+*** PARAMETER CHANGE = AS_OCCT = BODY
+*** allintext: git
+https://www.google.com/search?hl=en&as_q=git&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=body&safe=images&as_filetype=&tbs=
+
+
+
+
+
+
+
+
+Any <input> element (whether its type is text, submit, number, or something else entirely) can have name and value attributes that will become GET parameters when a form is submitted.
+
+You may also find it helpful to look at Google’s own HTML to answer these questions. In most browsers, you can control-click or right-click on a page and choose “View Page Source” to view the page’s underlying HTML.
+
+To include an input field in a form that users cannot see or modify, you can use a “hidden” input field.
