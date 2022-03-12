@@ -4,7 +4,19 @@
         <title>Search</title>
     </head>
     <body>
+        <div>
+            <!-- Links to Image and Advanced search w/ open new window target attribute -->
+            <a href="url" target="_blank">Image Search</a>
+            <a href="url" target="_blank">Advanced Search</a>
+
+
+        </div>
+
+
         <form action="https://www.google.com/search">
+            <!-- Example of a hidden input field -->
+            <input type="hidden" id="custId" name="custId" value="3487">
+
             <input type="text" name="q">
             <input type="submit" value="Google Search">
         </form>
