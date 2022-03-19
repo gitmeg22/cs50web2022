@@ -209,3 +209,26 @@ Any <input> element (whether its type is text, submit, number, or something else
 You may also find it helpful to look at Google’s own HTML to answer these questions. In most browsers, you can control-click or right-click on a page and choose “View Page Source” to view the page’s underlying HTML.
 
 To include an input field in a form that users cannot see or modify, you can use a “hidden” input field.
+
+
+
+<!-- ARTICLE: URL SEARCH PARAMETERS; Found while searching term "tbm"
+https://stenevang.wordpress.com/2013/02/22/google-advanced-power-search-url-request-parameters/ -->
+
+<!-- STACK OVERFLOW: SUBMITTING "I'M FEELING LUCKY" REQUEST ; Found while searching term "btnI"
+https://stackoverflow.com/questions/62786403/query-problems-with-html-and-google -->
+
+<!-- W3SCHOOLS: BOOTSTRAP 5 SETUP 
+https://www.w3schools.com/bootstrap5/bootstrap_get_started.php -->
+
+<!-- HUBSPOT: CSS GRID
+https://blog.hubspot.com/website/css-grid -->
+
+<!-- TUTSPLUS: CSS GRID FORMS
+https://webdesign.tutsplus.com/tutorials/how-to-build-web-form-layouts-with-css-grid--cms-28776 -->
+
+<!-- FREECODECAMP: FREE CSS GRID COURSE
+https://www.freecodecamp.org/news/heres-my-free-css-grid-course-merry-christmas-3826dd24f098/ -->
+
+<!-- STACKO: CSS WIDTH HEIGHT:
+https://stackoverflow.com/questions/43747185/force-css-grid-container-to-fill-full-screen-of-device -->
